@@ -1,7 +1,8 @@
-const Title = () => {
-    return (
-        <div>Please, leave your feedback</div>
-    )
-}
+const Title = ({ title, children }) => (
+    <>
+    <h2>{title}</h2>
+        {children}
+    </>
+)
 
 export default Title;
