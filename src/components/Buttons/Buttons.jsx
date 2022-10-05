@@ -1,4 +1,6 @@
 import css from './Buttons.module.css'
+import PropTypes from 'prop-types';
+
 
 const Buttons = ({ buttonsNames, handleClick }) => (
     <ul className={css.list}>
@@ -9,4 +11,11 @@ const Buttons = ({ buttonsNames, handleClick }) => (
         ))}
     </ul>
 )
+
+Buttons.propTypes = {
+    buttonsNames: PropTypes.array,
+    handleClick: PropTypes.func,
+    item: PropTypes.string,
+}
+
 export default Buttons;
